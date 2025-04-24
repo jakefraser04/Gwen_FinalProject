@@ -80,7 +80,6 @@
     </Compile>
     <Compile Include="ProblemJF.cs" />
     <Compile Include="ProblemJL.cs" />
-    <Compile Include="ProblemJLBase.cs" />
     <Compile Include="ProblemNE.cs" />
     <Compile Include="ProblemTJ.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

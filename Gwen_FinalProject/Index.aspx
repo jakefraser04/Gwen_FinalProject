@@ -11,10 +11,12 @@
         <div>
             <h1>We are the Hollaback Girls!</h1>
             <h4>Team Members: Jenna Liette, Nariah Edwards, Taylor Johnson, Jake Fraser</h4>
-            <asp:Button ID="cmdJL" runat="server" Text="Solution 312" />
-            <asp:Button ID="cmdNE" runat="server" Text="Solution 37" />
-            <asp:Button ID="cmdTJ" runat="server" Text="Solution 85" />
-            <asp:Button ID="cmdJF" runat="server" Text="Solution 42" />
+            <asp:Button ID="cmdJL" runat="server" Text="Solution 312" OnClick="cmdJL_Click" />
+            <asp:Button ID="cmdNE" runat="server" Text="Solution 37" OnClick="cmdNE_Click" />
+            <asp:Button ID="cmdTJ" runat="server" Text="Solution 85" OnClick="cmdTJ_Click" />
+            <asp:Button ID="cmdJF" runat="server" Text="Solution 42" OnClick="cmdJF_Click" />
+            <br />
+            <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
         </div>
     </form>
 </body>

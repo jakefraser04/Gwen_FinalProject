@@ -1,5 +1,4 @@
-﻿using System.Xml.Linq;
-/*
+﻿/*
 *File Name: ProblemJF.cs
 
 *Name: Jake Fraser
@@ -14,7 +13,7 @@
 *Citations: { Link to specific pages. "StackOverflow" or "w3Schools" is not sufficient. }
 *Anything else that's relevant:
 */
-
+using System.Xml.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;

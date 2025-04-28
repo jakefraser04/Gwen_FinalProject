@@ -15,6 +15,8 @@
             <asp:Button ID="cmdNE" runat="server" Text="Solution 37" OnClick="cmdNE_Click" />
             <asp:Button ID="cmdTJ" runat="server" Text="Solution 85" OnClick="cmdTJ_Click" />
             <asp:Button ID="cmdJF" runat="server" Text="Solution 42" OnClick="cmdJF_Click" />
+            <br/>
+            <asp:Label ID="lblExplanation" runat="server" Text=""></asp:Label>
             <br />
             <asp:Label ID="lblResult" runat="server" Text=""></asp:Label>
         </div>

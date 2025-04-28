@@ -55,7 +55,9 @@ namespace Gwen_FinalProject
 
             lblResult.Text = $"Random Matrix:<br/>{matrixStr}<br/>" +
                       $"Maximal Rectangle Area: {area}";
-               
+                lblExplanation.Text = "Given a binary matrix (rows and columns) containing only 0s and 1s, find the area of the largest rectangle that is entirely made up of 1s.";
+
+
             }
 
         }

@@ -10,7 +10,7 @@
 *Brief Description of the assignment:  Solve Problem 42: Trapping Rain Water on Leet Code.
 
 *Brief Description of what this module does. Using asp.net collaboratively to build a functional website 
-*Citations: { Link to specific pages. "StackOverflow" or "w3Schools" is not sufficient. }
+*Citations: https://leetcode.com/problems/trapping-rain-water/description/
 *Anything else that's relevant:
 */
 using System.Xml.Linq;

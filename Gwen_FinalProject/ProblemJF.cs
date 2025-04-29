@@ -10,7 +10,8 @@
 *Brief Description of the assignment:  Solve Problem 42: Trapping Rain Water on Leet Code.
 
 *Brief Description of what this module does. Using asp.net collaboratively to build a functional website 
-*Citations: https://leetcode.com/problems/trapping-rain-water/description/
+*Citations: https://leetcode.com/problems/trapping-rain-water/description/ 
+*https://www.perplexity.ai/search/file-name-problemjf-cs-name-ja-nwifhCT_TiKspbyGE5eo_w
 *Anything else that's relevant:
 */
 using System.Xml.Linq;

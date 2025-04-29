@@ -8,7 +8,6 @@
 *Course #/Section:   IS 3050 Section 002
 * Semester / Year:   Spring 2025
 *Brief Description of the assignment:  Connect all 4 solutions to main html page.
-
 *Brief Description of what this module does. Using asp.net collaboratively to build a functional website 
 *Citations: https://stackoverflow.com/questions/18836102/commenting-in-aspx/18836194
 *Anything else that's relevant:    

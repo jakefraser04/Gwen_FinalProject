@@ -1,4 +1,16 @@
-﻿using System;
+﻿/*
+*File Name: Index.aspx.cs
+*Name: Jake Fraser
+*email: fraserjk@mai.uc.edu
+*Assignment Number: Final Project
+*Due Date: 04/29/2025
+*Course #/Section: IS3050 Section -- 002
+* Semester / Year: Spring 2025
+*Brief Description of the assignment: This assignment is our final project for the class. We are creating a website with each of our leetcode solutions.
+*Brief Description of what this module does: This final project causes students to excute what we've learned throughout the semester.
+*Citations: https://stackoverflow.com/ 
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -25,6 +37,7 @@ namespace Gwen_FinalProject
             ProblemJF problem = new ProblemJF();
             int trappedWater = problem.Trap(height);
 
+            lblExplanation.Text = "Given n non-negative integers representing an elevation map where the width of each bar is 1, we can compute how much water is left trapped after a rainfall.";
             lblResult.Text = $"Random heights: [{string.Join(", ", height)}]<br/>" +
                              $"Trapped Water Units: {trappedWater}";
         }
@@ -65,7 +78,56 @@ namespace Gwen_FinalProject
 
         protected void cmdNE_Click(object sender, EventArgs e)
         {
-           
+            char[,] board = new char[9, 9];
+            // Initialize all cells to '.'
+            for (int i = 0; i < 9; i++)
+                for (int j = 0; j < 9; j++)
+                    board[i, j] = '.';
+
+            Random rand = new Random();
+
+            // Randomly fill 10 cells with random digits (1-9), checking validity
+            int filled = 0;
+            while (filled < 10)
+            {
+                int row = rand.Next(0, 9);
+                int col = rand.Next(0, 9);
+                if (board[row, col] == '.')
+                {
+                    char num = (char)('1' + rand.Next(0, 9));
+                    // Check if valid
+                    bool valid = true;
+                    for (int i = 0; i < 9; i++)
+                        if (board[row, i] == num || board[i, col] == num)
+                            valid = false;
+                    int boxRow = 3 * (row / 3), boxCol = 3 * (col / 3);
+                    for (int i = boxRow; i < boxRow + 3; i++)
+                        for (int j = boxCol; j < boxCol + 3; j++)
+                            if (board[i, j] == num)
+                                valid = false;
+                    if (valid)
+                    {
+                        board[row, col] = num;
+                        filled++;
+                    }
+                }
+            }
+
+            ProblemNE solver = new ProblemNE();
+            solver.SolveSudoku(board);
+
+            System.Text.StringBuilder sb = new System.Text.StringBuilder();
+            for (int i = 0; i < 9; i++)
+            {
+                for (int j = 0; j < 9; j++)
+                {
+                    sb.Append(board[i, j]);
+                    sb.Append(' ');
+                }
+                sb.Append("<br/>");
+            }
+            lblExplanation.Text = "This solution will generate a randomized sudoku board!";
+            lblResult.Text = sb.ToString();
         }
 
         protected void cmdJL_Click(object sender, EventArgs e)
